@@ -6,12 +6,17 @@ module Validator
 
       def self.included(base)
         base.class_eval do
+          def respond_to_missing?(method_name, *)
+            (method_name =~ VALIDATOR_REGEX) || super
+          end
+
           def method_missing(method_name, *args, &block)
             if regex = method_name.to_s.match(VALIDATOR_REGEX)
+              validator_name = regex[1]
+              validator_class_name = validator_name.camelcase + 'Validator'
+
               RSpec::Matchers.define method_name do |dynamic_matcher|
                 match do |model|
-                  validator_name = regex[1]
-                  validator_class_name = validator_name.camelcase + 'Validator'
                   model_validators =
                     model._validators[args.first].map{ |v| v.class.to_s }
                   model_validators.include?(validator_class_name)
