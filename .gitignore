@@ -1,3 +1,5 @@
+# TODO: This is just the default .gitignore, should probably be fine-tuned
+
 *.gem
 *.rbc
 /.config
