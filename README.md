@@ -6,4 +6,4 @@ Inspired by the following:
 * [shoulda-matchers](https://github.com/thoughtbot/shoulda-matchers)
 * [pundit-matchers](https://github.com/chrisalley/pundit-matchers)
 * [izumin5210/rspec-validator_spec_helper](https://github.com/izumin5210/rspec-validator_spec_helper).
-* [RSpec DynamicPredicate](https://github.com/rspec/rspec-expectations/blob/master/lib/rspec/matchers/built_in/has.rb)
+* [RSpec DynamicPredicate](https://github.com/rspec/rspec-expectations/blob/main/lib/rspec/matchers/built_in/has.rb)
