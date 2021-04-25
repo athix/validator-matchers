@@ -4,6 +4,14 @@ module Validator
     module ValidatorSpecHelper
       DEFAULT_ATTRIBUTE_NAME = :value
 
+      # TODO: Add support for: `have_validation_error('is bad').on(:attribute)`
+      RSpec::Matchers.define :have_validation_error do |matcher|
+        match do |model|
+          model.valid? # Populate errors array
+          model.errors[DEFAULT_ATTRIBUTE_NAME].include?(matcher)
+        end
+      end
+
       # Auto extend validator specs when included
       def self.included(base)
         base.instance_eval do
