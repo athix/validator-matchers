@@ -4,6 +4,10 @@ Historical changelog for all versions.
 
 ## HEAD
 
+## v0.0.3
+
+* Fix dynamic validator not allowing different attributes
+
 ## v0.0.2
 
 * Add respond_to_missing? method to ModelSpecHelper
@@ -11,7 +15,7 @@ Historical changelog for all versions.
 
 ## v0.0.1
 
-* Added initial model spec helpers, needs further testing and code cleanup
+* Add initial ModelSpecHelper, needs further testing and code cleanup
 
 ## v0.0.0
 

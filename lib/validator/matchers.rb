@@ -2,9 +2,9 @@ require 'rspec/core'
 
 module Validator
   module Matchers
-    autoload :VERSION, 'validator/matchers/version'
-    autoload :ModelSpecHelper, 'validator/matchers/model_spec_helper'
+    autoload :ModelSpecHelper,     'validator/matchers/model_spec_helper'
     autoload :ValidatorSpecHelper, 'validator/matchers/validator_spec_helper'
+    autoload :VERSION,             'validator/matchers/version'
   end
 end
 
