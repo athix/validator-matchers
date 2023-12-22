@@ -34,5 +34,5 @@ Gem::Specification.new do |s|
 
   s.require_paths = ['lib']
 
-  s.add_dependency 'rspec-rails', '>= 3.0', '< 6'
+  s.add_dependency 'rspec-rails', '>= 3.0', '< 7'
 end
