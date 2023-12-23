@@ -4,6 +4,10 @@ Historical changelog for all versions.
 
 ## HEAD
 
+## v0.0.4
+
+* Update RSpec version lock to allow for Rails 7.1 support [#1](https://github.com/joshbuker/validator-matchers/pull/1)
+
 ## v0.0.3
 
 * Fix dynamic validator not allowing different attributes
